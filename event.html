@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evenement Greenhome</title>
+    <link rel="stylesheet" href="event.css">
+  </head>
+  <body>
+    <header>
+      <a classe="logHome" href="index.html" ><img src="img/home-page.png"></img> </a>
+
+    </header>
+    <main>
+      <h1>NETTOYONS LA NATURE</h1>
+      <p>
+    Le 21 mars prochain, dans toutes les communes de France seront organisées le ramassage de déchets,
+    le nettoyage des espaces verts, des forets et des plages. 
+    Des bennes seront mises a disposition par les collectivitées et seront ensuite acheminées vers des centres de tri.
+      </p>
+      <p>
+    Les mégots de cigarettes mettent environ 2 ans à disparaitre lorsqu'ils sont jetés dans la nature. 
+    Nous allons donc pour cette premiere année accentuer notre action sur les mégots
+      </p>
+      <p> 
+  Pendant une semaine, un challenge sera organisé pour le ramassage des mégots des cigarettes : 
+  par équipe de 3, vous devrez rammasser un maximum de mégots
+    l'équipe qui ramassera le plus de mégots se verra attribué un prix : *
+      </p>
+      <div class="bottleButts">
+        <img src="img/botlleButts.jpg">
+      </div>
+      <form method="post" action ="">
+        <div class="formTeam">
+          <label for="teamName" >Nom de l'équipe</label>
+          <input type="text" id="teamName" name="teamName" required minlength="3" maxlength="30">
+          <label for="captainTeam"> Prénom du Capitaine de l'équipe </label>
+          <input type="text" id="captainTeam" required>
+          <label for="teamMateOne">Prénom équipier 1</label>
+          <input type="text" id="teamMateone"  required>
+          <label for="teamMateSecond">Prénom équipier 2</label>
+          <input type="text" id="teamMateSecond"  required>
+          <label for="mail">mail</label>
+          <input type="email" id="mail" placeholder="email@exemple.com" required>
+          <label for="region">selectionnez votre région</label>
+          <select id="region" name="region">
+            <option value="default"> Choisissez votre région</option>
+            <option value="Auvergne-Rhône-Alpes">Auvergne-Rhône-Alpes</option>
+            <option value="Bourgogne-Franche-Comté">Bourgogne-Franche-Comté</option>
+            <option value="Bretagne">Bretagne</option>
+            <option value="Centre-Val de Loire">Centre-Val de Loire</option>
+            <option value="Grand Est">Grand Est</option>
+            <option value="Hauts-de-France">Hauts-de-France</option>
+            <option value="Ile-de-France">Ile-de-France</option>
+            <option value="Normandie">Normandie</option>
+            <option value="Nouvelle-Aquitaine">Nouvelle-Aquitaine</option>
+            <option value="Occitanie">Occitanie</option>
+            <option value="Pays de la Loire">Pays de la Loire</option>
+            <option value="Provence-Alpes-Côte d’Azur">Provence-Alpes-Côte d’Azur.</option>
+          </select>
+        </div>
+        <fieldset>
+          <legend> A quel évènement souhaitez vous participer</legend>
+          <div>
+            <input type="radio" id="garbage" name="event">
+            <label for="garbage">ramassage des déchets</label>
+          </div>
+          <div>
+            <input type="radio" id="butts" name="event">
+            <label for="butts">collecte des mégots</label>
+          </div>
+          <div>
+            <input type="radio" id="all" name="event">
+            <label for="all">les 2 opérations</label>
+          </div>
+        </fieldset>
+        <div>
+          <input type="checkbox" id="rules" names="rules" required>
+          <label for="rules">J'accepte le réglement du jeu "ramassons les mégots"</label>
+        </div>
+        <div>
+          <label for="submit"></label>
+          <input type="submit" id="submit">
+        </div>
+      </form>
+    </main>
+    <footer>
+      <p class="footerP">
+    * reglement du concours disponible
+        <a class="footerA" href="#">ici</a>
+      </p>
+    </footer>
+  </body>
+</html>

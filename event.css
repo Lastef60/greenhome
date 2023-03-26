@@ -1,0 +1,64 @@
+h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 7vw;
+  color:#FFD700;
+  border-radius: 12px;
+  box-shadow: 4px 4px 20px rgba(200, 200, 200, 0.7);
+  background-image: linear-gradient(45deg, #558205 0%, #178205 20%, #058232 40%, #058270 60%, #055582 80%, #051782 100%);
+  height : 10vh;
+}
+
+form{
+  color: rgb(85, 130, 5);
+  font-weight: bold;
+  padding: 10px;
+  background-image: url(img/botlleButts.jpg);
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+.bottleButts>img{
+  display : none;
+}
+
+form{
+  color: rgb(85, 130, 5);
+  font-weight: bold;
+  padding: 10px;
+}
+
+.formTeam{
+  display : flex;
+  flex-direction: column;
+}
+
+.footerA{
+  text-decoration-color: black;
+}
+
+@media only screen and (min-width:664px){
+
+  .bottleButts>img{
+    display: block;
+    float: right;
+    margin-left: 0;
+    box-sizing: content-box;
+    width: 50vw;
+  }
+
+  .formTeam{
+    display :flex;
+    flex-direction: column;
+    box-sizing:border-box;
+  }
+
+  form{
+    background-color:#558205;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    background-image: none;
+  }
+}
